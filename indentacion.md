@@ -8,4 +8,4 @@ Normalmente se suelen dejar como indentación o sangrado 4 espacios en blanco co
 Tenemos que ser muy conscientes del sangrado que realizamos ya que de ello dependerá la lógica de nuestro código. 
 
 A continuación podemos ver un ejemplo de indentación de bloques de código:
-![i](img/identacion_e.png)
+![i](identacion_e.png)
