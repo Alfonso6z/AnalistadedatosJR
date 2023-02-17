@@ -1,4 +1,4 @@
-# Análista de datos JR Proyecto Final
+# Análista de Datos JR Proyecto Final
 ## Tabla de contenido:
 - [🚀 Introducción][1]
 - [¿Qué es el juego del ahorcado? ⚙️][2]
