@@ -1,3 +1,4 @@
+
 def suma_n_numeros(*numeros):
     suma = 0
     for numero in numeros:
@@ -57,3 +58,13 @@ def menu(titulo,*opt,**mensajes):
     else:
         print(mensajes["error"])
         return -1
+    
+def input_n_numeros():
+    lista_numeros = []
+    cont = 1
+    while True:
+        n = int(input(f"ingresa el número {cont} o -1 para salir: "))
+        if n<0:
+            return lista_numeros
+        lista_numeros.append(n)
+        cont+=1
