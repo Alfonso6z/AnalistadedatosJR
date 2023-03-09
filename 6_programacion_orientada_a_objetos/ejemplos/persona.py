@@ -1,6 +1,8 @@
+from animal import Animal
+from persona import Persona
 class Persona:
     # inicializador
-    def __init__(self,nombre:str,edad:int,mascota:Animal=None,conyuge:Persona=None):
+    def __init__(self,nombre:str,edad:int,sexo:str,mascota:Animal=None,conyuge:Persona=None):
         pass
     
     # comportamiento

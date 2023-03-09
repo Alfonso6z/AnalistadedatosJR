@@ -1,7 +1,7 @@
 class Animal:
     
     def __init__(self,especie,dieta,habitad):
-        self.especie = especie
+        pass
 
     def camina(self):
         pass
