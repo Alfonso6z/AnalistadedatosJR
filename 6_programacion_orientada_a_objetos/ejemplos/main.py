@@ -1,22 +1,18 @@
-from galleta import Galleta
+from animal import Animal
+from mascota import Mascota
+from persona import Persona
 
 def main():
-    # instanciar o crear objeto
-    g1 = Galleta("Chocolate","Marron",11.0)
-    g2 = Galleta("Vainilla","Marron",5.0)
+    p1 = Persona("Benjamin", 18, "M")
+    p2 = Persona("Maria", 20, "F")
+    p3 = Persona("Raul", 30, "M")
+    m1 = Mascota("Firulais", "Perro", "Croquetas", "Dept", "correr")
+    
+    print(p1.getNombre())
+    print(m1.nombre)
+    p1.adoptar_mascota(m1)
+    print(p1.getMascota().duenio.getNombre())
 
-    sabor_g1 = g1.dame_tu_sabor()
-    print(sabor_g1)
-    # g2 = Galleta("Vainilla","Amarillo")
-    # g3 = Galleta("Fresa","Rosa")
 
-    # print(f"esta galleta tiene un sabor de {g3.sabor}")
-    # print(f"esta galleta tiene un color {g1.color}")
-    
-    # print(type(g1))
-    
-    # g1.dame_tu_sabor()
-    # g2.dame_tu_sabor()
-    
 if __name__ == "__main__":
     main()
