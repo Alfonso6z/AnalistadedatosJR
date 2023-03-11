@@ -1,3 +1,4 @@
-class JugadorSiete:
-    def __init__(self,parametros):
-        atributos
+from jugador import Jugador
+class JugadorSiete(Jugador):
+    def __init__(self, nick, humano):
+        pass
