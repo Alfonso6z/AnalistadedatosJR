@@ -7,17 +7,7 @@ class Persona:
         self.__sexo:str = sexo
         self.__mascota:Animal = mascota
         self.__conyuge:Persona = conyuge
-
-    # dame nombre
-    def getNombre(self):
-        return self.__nombre
     
-    # mascota
-    def setMascota(self,mascota):
-        self.__mascota = mascota
-        
-    def getMascota(self):
-        return self.__mascota
     # comportamiento
     def hablar(self,mensaje:str):
         print(f"{self.__nombre}: {mensaje}")
@@ -33,3 +23,54 @@ class Persona:
     def casar_con(self,conyuge):
         self.__conyuge = conyuge
         print(f"Me case con {conyuge.nombre}")
+    
+    # get es cuando retorna una variable privada
+    @property
+    def nombre(self):
+        return self.__nombre
+    # set actualiza una variable privada
+    @nombre.setter
+    def nombre(self,nombre):
+        self.__nombre = nombre
+    
+    @property
+    def edad(self):
+        return self.__edad
+    @edad.setter
+    def edad(self,edad):
+        self.__edad = edad
+        
+    @property
+    def sexo(self):
+        return self.__sexo
+    @sexo.setter
+    def sexo(self,sexo):
+        self.__sexo = sexo
+    
+    @property
+    def mascota(self):
+        return self.__mascota
+    @mascota.setter
+    def mascota(self,mascota):
+        self.__mascota = mascota
+    
+    @property
+    def conyuge(self):
+        return self.__conyuge
+    @conyuge.setter
+    def conyuge(self,conyuge):
+        self.__conyuge = conyuge
+""" 
+"setYget":{
+		"prefix":"setget",
+		"body":[
+			"@property",
+    		"def $CLIPBOARD(self):",
+        	"\treturn self.__$CLIPBOARD",
+    		"@$CLIPBOARD.setter",
+    		"def $CLIPBOARD(self,$CLIPBOARD):",
+        	"\tself.__$CLIPBOARD = $CLIPBOARD",
+		],
+		"description": "Crear setters y getter"
+	}
+"""

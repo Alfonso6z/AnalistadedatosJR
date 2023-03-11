@@ -8,10 +8,11 @@ def main():
     p3 = Persona("Raul", 30, "M")
     m1 = Mascota("Firulais", "Perro", "Croquetas", "Dept", "correr")
     
-    print(p1.getNombre())
-    print(m1.nombre)
-    p1.adoptar_mascota(m1)
-    print(p1.getMascota().duenio.getNombre())
+    print(p1.nombre)
+    p1.nombre = "El Benjas"
+    print(p1.nombre)
+
+    
 
 
 if __name__ == "__main__":
