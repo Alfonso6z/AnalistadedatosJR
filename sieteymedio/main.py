@@ -11,7 +11,5 @@ def main():
     print(j1.contar_puntos())
     print(j1.contar_puntos())
 
-    
-    
 if __name__ == "__main__":
     main()
